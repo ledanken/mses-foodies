@@ -11,9 +11,10 @@
 
     {% block maincss %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        
     {% endblock %}
 
-    {% block addtionalcss%}
+    {% block addtionalcss %}
     {% endblock %}
 
     {% block mainjs %}
@@ -31,6 +32,11 @@
     <h1>Hello to Mses Foodies!</h1>
 
     {% block mainpage_header %}
+      <div class="row">
+        <div class="col-12 col=lg-4 my=auto py=1 py=lg-0 text=center text=lg-center">
+          <a href="{% url 'home' %}" class="nav-link main-logo-link"><h1>Mses Foodies<y/h1></a>
+      </div>
+      
     {% endblock %}
 
     {% block mainpage_navi %}

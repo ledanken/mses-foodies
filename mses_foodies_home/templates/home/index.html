@@ -1,27 +1,47 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block mainpage_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col">
-            
-            </div>
-        </div>
-    </div>
-{% endblock %}
-
 {% block body_content %}
     <div class="flex-container h=100">
         <div class="row h=100">
             <div class="col-3 col-md-6 my=auto">
-                <h3>The available Foods<h3>
+                <h2>The available Foods<h2>
             </div>
             <div>
               <ul class="list-group list-group-horizontal-sm">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/../media/Puto.jpg" class="card-img-top" alt="Puto">
+                        <div class="card-body">
+                          <h5 class="card-title">Puto</h5>
+                          <p class="card-text">A Filipino delicacy mainly made of rice flour and egg</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/../media/Ginatan.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ginatan</h5>
+                          <p class="card-text">"..."</p>
+                          <a href="#" class="btn btn-primary">Learn More</a>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/../media/Butchi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Butchi</h5>
+                          <p class="card-text">"..."</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </li>
               </ul>
             </div>
         </div>

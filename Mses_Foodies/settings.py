@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Optional -- requires install using `django-allauth[socialaccount]`.
     'allauth.socialaccount',
     'mses_foodies_home',
+    'foods_and_delicacies',
 ]
 
 MIDDLEWARE = [

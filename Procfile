@@ -1,0 +1,1 @@
+web: gunicorn mses_foodies.wsgi

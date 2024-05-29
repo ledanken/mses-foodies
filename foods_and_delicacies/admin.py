@@ -9,4 +9,8 @@ class FoodAdmin(admin.ModelAdmin):
         'rating',
         'image',
     )
+    
+    ordering = ('name',
+    )
+    
 admin.site.register(Food, FoodAdmin)

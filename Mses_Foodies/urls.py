@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', include('mses_foodies_home.urls')),
+    path('foods/', include('foods_and_delicacies.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

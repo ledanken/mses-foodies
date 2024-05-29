@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_content %}
+<div class="card text-center bg-transparent text-white border-0">
+  <div class="card-body">
+    <h3 class="card-title">The Foods Available Today</h3>
+    <p class="card-text"><i>Order and it will be delivered to your door!</i></p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      {{ foods }}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -8,6 +8,7 @@ def foods(request):
     foods_and_delicacies = Food.objects.all()
     
     context = {
-        'foods_and_delicacies': foods,
+        'foods_and_delicacies': foods_and_delicacies,
     }
-    return render(request, 'foods/foods.html')
+    
+    return render(request, 'foods/foods.html', context)

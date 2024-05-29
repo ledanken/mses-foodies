@@ -8,11 +8,65 @@
     <p class="card-text"><i>Order and it will be delivered to your door!</i></p>
   </div>
 </div>
+
 <div class="container">
   <div class="row">
     <div class="col">
-      {{ foods }}
+      {% for x in foods_and_delicacies %}
+        {{ x.name}}
+      {% endfor %}
+     
     </div>
   </div>
 </div>
+
+
+         
+  <div class="flex-container">
+    <ul class="list-group list-group-horizontal-sm">
+      <li class="list-group-item">
+        {% for food in foods %}
+          <div class="card" style="width: 18rem;">
+            {% if food.image %}
+            <a href="">
+              <img src="{{ food.image.url }}" class="card-img-top" alt="{{ food.name }}">
+            </a>
+            {% else %}
+            <a href="">
+              <img src="{{ MEDIA_URL }}no-image.png" class="card-img-top" alt="{{ food.name }}">
+            </a>
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ food.name }}</h5>
+                <p class="card-text">{{ food.description }}</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">Add to Bag</a>
+              </div>
+          </div>
+        {% endfor %}
+      </li>
+      <li class="list-group-item">
+          <div class="card" style="width: 18rem;">
+              <img src="/../media/Ginatan.jpg" class="card-img-top" alt="Ginatan">
+              <div class="card-body">
+                <h5 class="card-title">Ginatan</h5>
+                <p class="card-text">"A creamy tasty snack or dessert made of sticky rice balls and fruits"</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+          </div>
+      </li>
+      <li class="list-group-item">
+          <div class="card" style="width: 18rem;">
+              <img src="/../media/Butchi.jpg" class="card-img-top" alt="Butchi">
+              <div class="card-body">
+                <h5 class="card-title">Butchi</h5>
+                <p class="card-text">"Buchi or Butsi is a rice cake made of sweet rice flour molded into shape with sweet bean paste filling and sesame seed coating"</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+          </div>
+      </li>
+    </ul>
+  </div>
 {% endblock %}

@@ -1,1 +1,1 @@
-web: gunicorn mses_foodies.wsgi
+web: gunicorn Mses_Foodies.wsgi
